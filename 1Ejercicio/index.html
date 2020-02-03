@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ejemplo Ajax</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/funcionesAjax.js" defer></script>
+    <script src="js/pruebas.js" defer></script>
+</head>
+<body>
+<div id="spinner" class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+</div>
+<div>
+    <h1>Obtener Datos en formato XML con una petición síncrona por GET</h1>
+    <div>
+        <p>petición síncrona por GET</p>
+        <button onclick="funcionAjaxAsincronaXML();" >Ejecutar LLamada Sincrona Ajax</button>
+    </div>
+    <div>
+        <h1>Resultados:</h1>
+        <div id="resultadoSincrono"></div>
+    </div>
+</div>
+
+<div>
+    <h1>Obtener Datos en formato JSON con una petición asíncrona POST</h1>
+    <div>
+        <p>Al pulsar el botón ejercutaremos una petición Ajax Asíncrona que tratara los datos JSON</p>
+        <button onclick="funcionAjaxAsincronaJSON();" >formato JSON con una petición asíncrona POST</button>
+    </div>
+    <div>
+        <h1>Resultados:</h1>
+        <div id="resultadoAsincronoJSON"></div>
+    </div>
+</div>
+
+<div>
+    <h1>Obtener datos realizando búsquedas por AJAX con los siguientes tipos de inputs:
+        <br>- Text
+        - Select
+        - Checkbox 
+        - Textarea
+    </h1>
+    <div>
+        <form id="formulario" action="">
+            <div>
+                <label for="">Ram</label>
+                <input type="text" name="ram" id="ram">
+                <br>
+                <label>Marca</label>
+                <select name="marca" id="marca">
+                    <option value="huawei">Huawei</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="iphone">Iphone</option>
+                </select>
+                <br>
+                <label for="">Modelo</label>
+                <input type="text" name="modelo" id="modelo">
+            </div>
+
+            <input type="submit" id="boton" value="Enviar" />
+        </form>
+    </div>
+    <div id="divRespuesta">
+
+    </div>
+</div>
+
+</body>
+</html>
