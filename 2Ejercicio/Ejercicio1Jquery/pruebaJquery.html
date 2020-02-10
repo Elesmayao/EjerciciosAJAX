@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ejemplo Ajax</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/pruebasJquery.js" defer></script>
+</head>
+<body>
+<div id="spinner" class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+</div>
+<div>
+    <h1>Obtener Datos en formato JSON con una petición asíncrona POST y con un filtro de búsqueda</h1>
+    <div>
+        <form action="">
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" id="marca"><br><br>
+        </form>
+        <button onclick="realizarPeticion();" >Filtrar</button>
+    </div>
+    <div>
+        <h1>Resultados:</h1>
+        <div id="resultadoAsincronoJSON">
+
+        </div>
+    </div>
+</div>
+
+<div>
+    <h1>Hacer un formulario para insertar un registro en la base de datos por AJAX y 
+        validarlo en servidor de forma asíncrona antes de insertarlo.
+    </h1>
+    <div>
+        <form action="">
+            <label for="marca1">Marca</label>
+            <input type="text" name="marca1" id="marca1"><br><br>
+            <div id="erroresMarca">
+
+            </div>
+            <label for="modelo">Modelo</label>
+            <input type="text" name="modelo" id="modelo"><br><br>
+            <div id="erroresModelo">
+                
+            </div>
+            <label for="ram">Ram</label>
+            <input type="text" name="ram" id="ram"><br><br>
+            <div id="erroresRam">
+                
+            </div>
+            <label for="camara">Camara</label>
+            <input type="text" name="camara" id="camara"><br><br>
+            <div id="erroresCamara">
+                
+            </div>
+        </form>
+        <button onclick="validarFormulario();" >Insertar</button>
+    </div>
+    <div>
+        <h1>Resultados:</h1>
+        <div id="resultadoAsincronoJSON2">
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
